@@ -1,0 +1,35 @@
+@font-face{
+  font-family: 'aileron-heavy';
+  src: local('aileron'), url('../../assets/fonts/aileron/Aileron-Heavy.otf');
+}
+
+@font-face{
+  font-family: 'aileron-thin';
+  src: local('aileron'), url('../../assets/fonts/aileron/Aileron-Thin.otf');
+}
+
+@font-face{
+  font-family: 'aileron-regular';
+  src: local('aileron'), url('../../assets/fonts/aileron/Aileron-Regular.otf');
+}
+
+@font-face{
+  font-family: 'aileron-italic';
+  src: local('aileron'), url('../../assets/fonts/aileron/Aileron-Italic.otf');
+}
+
+h2, h3{
+  font-family: 'aileron-italic';
+}
+
+h4, h5{
+  font-family: 'aileron-italic';
+}
+
+p{
+  font-family: 'aileron-thin';
+}
+
+h1{
+  font-family: 'aileron-heavy';
+}

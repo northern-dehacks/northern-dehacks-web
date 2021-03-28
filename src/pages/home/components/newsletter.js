@@ -5,8 +5,8 @@ class Newsletter extends Component {
     render() {
         return (
             <form>
-                <Grid container justify="center" spacing={5}>
-                    <Grid item md={8}>
+                <Grid container justify="center" spacing={3}>
+                    <Grid item md={7}>
                         <input
                             name="newsletter-signup"
                             type="email"

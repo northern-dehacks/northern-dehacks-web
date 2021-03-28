@@ -1,5 +1,5 @@
 import { Component } from "react"
-import { Container } from '@material-ui/core'
+import { Box, Container } from '@material-ui/core'
 
 import './home.scss'
 import Particles from '../../components/particles/particles.js'
@@ -11,11 +11,16 @@ class Home extends Component {
             <div>
                 <Particles />
                 <Container>
-                    <div className='center'>
+                    <Box className='pos-center text-center'>
                         <h1 className='landing-title'>Northern Dehacks</h1>
-                    </div>
-                    <Newsletter />
-
+                        <p className='text-muted lh-2 mb-5'>
+                            Northern DeHacks helps future-oriented Canadian students to
+                            strengthen and diversify the STEM community and provide valuable
+                            opportunities by mentoring and hosting events related to STEM that
+                            motivate, as well as deliver confidence and support.
+                        </p>
+                        <Newsletter />
+                    </Box>
                 </Container>
             </div>
         )

@@ -1,7 +1,12 @@
+@import '../../components/app/app.scss';
+
 .landing-title{
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
-.newsletter-btn{
-    border-radius: 0.7rem;
-}
+input[name='newsletter-signup'] {
+    @include default-input();
+    background-color: $input-bg;
+    padding: 1.2rem;
+  }
+  

@@ -1,7 +1,9 @@
+@import "node_modules/bootstrap-utilities/bootstrap-utilities";
+
 $primary: #133C9A;
 $secondary: #157A6E;
-$highlight: #FF6F56;
-$splash: #FFADAD;
+$danger-highlight: #FF6F56;
+$info: #FFADAD;
 $background: #f2f2f2;
 $input-bg: #eeeef3;
 $light-outer-shadow: 1px 2px 4px lightgrey;
@@ -50,26 +52,53 @@ h1{
 
 body{
   overflow-x: hidden;
-  background-color: $background;
 }
 
-.centered {
+.flex-center {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.primary-color{
-  color: $primary
+.pos-center{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.secondary-color{
-  color: $secondary;
+.text-primary{
+  color: $primary !important;
 }
 
-.highlight-color{
-  color: $highlight;
+.text-secondary{
+  color: $secondary !important;
+}
+
+.text-info{
+  color: $info !important;
+}
+
+.text-danger, .text-highlight{
+  color: $danger-highlight !important;
+}
+
+.bg-primary{
+  background-color: $primary !important;
+}
+
+.bg-secondary{
+  background-color: $secondary !important;
+}
+
+.bg-danger, .bg-highlight{
+  background-color: $danger-highlight !important;
+}
+
+.bg-info{
+  background-color: $info !important;
 }
 
 .block{
@@ -80,41 +109,15 @@ body{
   display: inline-block;
 }
 
-input, textarea{
+.lh-2{
+  line-height: 2;
+}
+
+@mixin default-input{
   outline: none;
   font-weight: bold;
   width: 100%;
   border-radius: 7px;
   border: none;
-  background-color: $input-bg;
   box-shadow: $light-outer-shadow;
-}
-
-
-.bg-primary{
-  background-color: $primary;
-}
-
-.bg-secondary{
-  background-color: $secondary;
-}
-
-
-.h-100{
-  height: 100%;
-}
-
-.w-100{
-  width: 100%
-}
-
-
-
-
-.p-3{
-  padding: 1rem;
-}
-
-.p-4{
-  padding: 1.3rem;
 }

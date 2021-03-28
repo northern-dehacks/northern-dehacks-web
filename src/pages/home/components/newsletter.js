@@ -5,18 +5,17 @@ class Newsletter extends Component {
     render() {
         return (
             <form>
-                <Grid container spacing={5}>
-                    <Grid item md={5}>
+                <Grid container justify="center" spacing={5}>
+                    <Grid item md={8}>
                         <input
                             name="newsletter-signup"
                             type="email"
                             placeholder="Email Address"
-                            className='p-3'
                             required
                         />
                     </Grid>
-                    <Grid item md={4}>
-                        <Button className='h-100 newsletter-btn' variant="contained" color="primary">Sign up!</Button>
+                    <Grid item md={2}>
+                        <Button className='w-100 h-100' variant="contained" color="secondary">Subscribe</Button>
                     </Grid>
                 </Grid>
             </form>

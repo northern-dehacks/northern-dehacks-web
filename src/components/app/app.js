@@ -16,7 +16,10 @@ const theme = createMuiTheme({
     highlight: {
       main: '#FF6F56'
     },
-    splash: {
+    danger: {
+      main: '#FF6F56'
+    },
+    info: {
       main: '#FFADAD'
     },
   }

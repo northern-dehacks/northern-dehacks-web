@@ -27,7 +27,7 @@ class Home extends Component {
                     </Container>
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={0} speed={-0.1}>
+                <ParallaxLayer offset={0} speed={0.5}>
                     <Particles />
                 </ParallaxLayer>
 

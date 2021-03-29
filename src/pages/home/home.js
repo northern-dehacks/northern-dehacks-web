@@ -6,7 +6,8 @@ import './home.scss'
 import Clouds from './components/clouds.js';
 import Satellite from './components/satellite.js';
 import Background from './components/background.js';
-import Landing from "./components/landing";
+import Landing from "./components/landing.js";
+import MissionStatement from "./components/mission.js";
 
 
 class Home extends Component {
@@ -14,6 +15,7 @@ class Home extends Component {
         return (
             <Parallax ref={ref => (this.parallax = ref)} pages={3}>
                 <Landing />
+                <MissionStatement />
                 <Background />
                 <Satellite />
                 <Clouds />

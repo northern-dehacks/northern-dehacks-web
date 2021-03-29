@@ -117,6 +117,14 @@ body{
   line-height: 2;
 }
 
+.to-back{
+  z-index: -1;
+}
+
+.to-front{
+  z-index: 1;
+}
+
 .page-bg{
   background-color: $background;
   z-index: -1;

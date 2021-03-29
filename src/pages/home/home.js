@@ -12,7 +12,7 @@ class Home extends Component {
 
         return (
             <Parallax ref={ref => (this.parallax = ref)} pages={3}>
-                <ParallaxLayer offset={0} speed={1}>
+                <ParallaxLayer offset={0} speed={1} className='to-front'>
                     <Container>
                         <Box className='pos-center text-center'>
                             <h1 className='landing-title'>Northern Dehacks</h1>

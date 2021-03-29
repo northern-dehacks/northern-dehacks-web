@@ -4,7 +4,7 @@ $primary: #133C9A;
 $secondary: #157A6E;
 $danger-highlight: #FF6F56;
 $info: #FFADAD;
-$background: #f2f2f2;
+$background: #87BCDE;
 $input-bg: #eeeef3;
 $light-outer-shadow: 1px 2px 4px lightgrey;
 
@@ -115,6 +115,11 @@ body{
 
 .lh-2{
   line-height: 2;
+}
+
+.page-bg{
+  background-color: $background;
+  z-index: -1;
 }
 
 @mixin default-input{

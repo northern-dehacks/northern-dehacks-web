@@ -4,6 +4,7 @@ import { ParallaxLayer } from '@react-spring/parallax';
 
 import Particles from '../../../components/particles/particles.js';
 import Newsletter from './newsletter.js';
+import LandingDivider from './landing-divider.js';
 
 class ParallaxLanding extends Component {
     render() {
@@ -27,6 +28,7 @@ class ParallaxLanding extends Component {
                 <ParallaxLayer offset={0} speed={0.5}>
                     <Particles />
                 </ParallaxLayer>
+                <LandingDivider />
             </Box>
         )
     }

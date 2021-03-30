@@ -28,7 +28,10 @@ class ParallaxLanding extends Component {
                 <ParallaxLayer offset={0} speed={0.5}>
                     <Particles />
                 </ParallaxLayer>
-                <LandingDivider />
+                
+                <ParallaxLayer offset={1} speed={1} style={{ 'fill': 'white' }}>
+                    <LandingDivider />
+                </ParallaxLayer>
             </Box>
         )
     }

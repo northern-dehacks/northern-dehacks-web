@@ -10,6 +10,10 @@ input[name="newsletter-signup"] {
     padding: 1.2rem;
 }
 
+.mission-text {
+    font-size: 1.4rem;
+}
+
 .custom-shape-divider-top-1617034141 {
     position: absolute;
     top: 0;
@@ -27,5 +31,19 @@ input[name="newsletter-signup"] {
 }
 
 .custom-shape-divider-top-1617034141 .shape-fill {
-    fill: #FFFFFF;
+    fill: #ffffff;
+}
+
+.mission-paper {
+    border-radius: 20px 0 0 20px !important;
+    position: absolute;
+}
+
+
+
+@media screen and (max-width: 950px){
+    .mission-paper{
+        position: relative;
+        border-radius: 20px !important;
+    }
 }

@@ -6,7 +6,7 @@ class Newsletter extends Component {
         return (
             <form>
                 <Grid container justify="center" spacing={3}>
-                    <Grid item md={7}>
+                    <Grid item lg={7}>
                         <input
                             name="newsletter-signup"
                             type="email"
@@ -14,7 +14,7 @@ class Newsletter extends Component {
                             required
                         />
                     </Grid>
-                    <Grid item md={2}>
+                    <Grid item lg={2}>
                         <Button className='w-100 h-100' variant="contained" color="secondary">Subscribe</Button>
                     </Grid>
                 </Grid>

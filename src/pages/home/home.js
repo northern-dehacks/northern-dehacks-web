@@ -21,7 +21,7 @@ class Home extends Component {
                     <MissionStatement />
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={2} speed={2} className='to-front'>
+                <ParallaxLayer offset={2} speed={1} className='to-front'>
                     <AboutTheBoard />
                 </ParallaxLayer>
 

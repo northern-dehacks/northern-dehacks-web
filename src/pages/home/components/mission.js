@@ -10,7 +10,7 @@ const Mission = ({ forwardedRef, view }) => {
                     <Grid item md={4}>
                         <Slide timeout={1000} in={view} direction='left' mountOnEnter unmountOnExit>
                             <Paper className='mission-paper' elevation={5}>
-                                <Box className='mission-box p-5'>
+                                <Box className='p-5 position-relative'>
                                     <h2>Our Mission</h2>
                                     <p className='lh-2 mission-text'>As a student run organization, we aim to strengthen and diversify the
                                     STEM community by encouraging high school students to engage themselves

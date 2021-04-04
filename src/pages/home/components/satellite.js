@@ -1,14 +1,11 @@
 import { Component } from 'react';
-import { ParallaxLayer } from '@react-spring/parallax';
 
-class ParallaxSatellite extends Component {
+class Satellite extends Component {
     render() {
         return (
-            <ParallaxLayer offset={0.8} speed={-0.4}>
-                <img src={'https://awv3node-homepage.surge.sh/build/assets/satellite4.svg'} style={{ width: '15%', marginLeft: '70%' }} alt='decoration' />
-            </ParallaxLayer>
+            <img src={'https://awv3node-homepage.surge.sh/build/assets/satellite4.svg'} style={{ width: '15%', marginLeft: '70%' }} alt='decoration' />
         )
     }
 }
 
-export default ParallaxSatellite
+export default Satellite

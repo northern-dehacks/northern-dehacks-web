@@ -35,15 +35,68 @@ input[name="newsletter-signup"] {
 }
 
 .mission-paper {
-    border-radius: 20px 0 0 20px !important;
-    position: absolute;
+    border-radius: 20px !important;
 }
 
+.mission-box {
+    position: relative;
+    text-align: center;
+    border-radius: 74% 82% 70% 88%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10rem;
+    font-size: 1.2rem;
+}
 
+.mission-box{
+    p{
+        line-height: 2;
+    }
+}
 
-@media screen and (max-width: 950px){
-    .mission-paper{
-        position: relative;
-        border-radius: 20px !important;
+.mission-box:before,
+.mission-box:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: rotate-mission-box 5s linear infinite;
+}
+.mission-box:before {
+    border-radius: 130% 151% 189% 166%;
+    background-color: rgba(255, 255, 255, 0.7);
+    animation-delay: 0s;
+    transition: 0.5s;
+}
+.mission-box:after {
+    border-radius: 145% 86% 80% 90%;
+    background-color: rgba(255, 255, 255, 0.3);
+    animation-delay: 0.2s;
+    transition: 0.5s;
+}
+
+@keyframes rotate-mission-box {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .mission-box:before,
+    .mission-box:after {
+        animation: none;
+        opacity: 0;
+    }
+
+    .mission-box{
+        text-align: left;
+        padding: 1.5rem 3rem 1.5rem 3rem;
+        border-radius: 20px;
+        opacity: 100%;
     }
 }

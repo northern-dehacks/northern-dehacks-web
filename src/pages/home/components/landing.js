@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import { Box, Container } from '@material-ui/core'
+import { Box, Container, Typography } from '@material-ui/core'
 import { ParallaxLayer } from '@react-spring/parallax';
 
 import Particles from '../../../components/particles/particles.js';
@@ -14,12 +14,12 @@ class ParallaxLanding extends Component {
                     <Container>
                         <Box className='pos-center text-center'>
                             <h1 className='landing-title'>Northern DeHacks</h1>
-                            <p className='text-muted lh-2 mb-5'>
+                            <Typography variant="body1" color="textSecondary" component="p" className='lh-2 mb-5'>
                                 Northern DeHacks helps future-oriented Canadian students to
                                 strengthen and diversify the STEM community and provides valuable
                                 opportunities by mentoring and hosting events related to STEM that
                                 motivate, as well as deliver confidence and support.
-                        </p>
+                        </Typography>
                             <Newsletter />
                         </Box>
                     </Container>
@@ -28,7 +28,7 @@ class ParallaxLanding extends Component {
                 <ParallaxLayer offset={0} speed={0.5}>
                     <Particles />
                 </ParallaxLayer>
-                
+
                 <ParallaxLayer offset={1} speed={1} style={{ 'fill': 'white' }}>
                     <LandingDivider />
                 </ParallaxLayer>

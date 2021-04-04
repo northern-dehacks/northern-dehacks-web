@@ -1,4 +1,4 @@
-import { Container, Slide, Grid, Paper, Box } from '@material-ui/core'
+import { Container, Slide, Grid, Box } from '@material-ui/core'
 import { Component } from 'react'
 import handleViewport from 'react-in-viewport';
 
@@ -7,19 +7,16 @@ const Mission = ({ forwardedRef, view }) => {
         <div className="viewport-block" ref={forwardedRef}>
             <Container maxWidth='xl'>
                 <Grid container justify='space-around'>
-                    <Grid item md={4}>
+                    <Grid item md={5}>
                         <Slide timeout={1000} in={view} direction='left' mountOnEnter unmountOnExit>
-                            <Paper className='mission-paper' elevation={5}>
-                                <Box className='p-5 position-relative'>
-                                    <h2>Our Mission</h2>
-                                    <p className='lh-2 mission-text'>As a student run organization, we aim to strengthen and diversify the
-                                    STEM community by encouraging high school students to engage themselves
-                                    in programming and technology. Through our hackathons and other contributions
-                                    within the STEM community, we strive to give students the opportunity to
-                                    create and share their inventive projects and creative ideas within a supportive
-                                    community of individuals similarly interested in STEM.</p>
+                            <Box className="mission-box">
+                                <Box>
+                                    <h1>Our Mission</h1>
+                                    <p className='mt-2'>
+                                        As a student run organization, we aim to strengthen and diversify the STEM community by encouraging high school students to engage themselves in programming and technology. Through our hackathons and other contributions within the STEM community, we strive to give students the opportunity to create and share their inventive projects and creative ideas within a supportive community of individuals similarly interested in STEM.
+			                        </p>
                                 </Box>
-                            </Paper>
+                            </Box>
                         </Slide>
                     </Grid>
                 </Grid>

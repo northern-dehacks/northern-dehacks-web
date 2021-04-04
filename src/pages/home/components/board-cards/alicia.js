@@ -2,16 +2,16 @@ import { Component } from 'react';
 import handleViewport from 'react-in-viewport';
 import { Slide } from '@material-ui/core'
 
-import BoardMemberCard from '../../../../components/cards/board-member-card.js';
-import NathanImg from '../../../../assets/board-members/nathan.jpg';
+import BoardMemberCard from './board-member-card.js';
+import AliciaImg from '../../../../assets/board-members/nathan.png';
 
 const AliciaCard = ({ forwardedRef, view }) => {
     const BLURB = "Hello! My name is Alicia Unwin and I'm currently a grade 11 student and a founding member of Northern DeHacks. I'm passionate about design and business. I help to run social media and coordinate events here at Northern DeHacks."
 
     return (
-        <div className="viewport-block" ref={forwardedRef}>
+        <div className="viewport-block h-100" ref={forwardedRef}>
             <Slide timeout={1000} in={view} direction='left' mountOnEnter unmountOnExit>
-                <BoardMemberCard name='Alicia Unwin' img={NathanImg} blurb={BLURB} />
+                <BoardMemberCard name='Alicia Unwin' img={AliciaImg} blurb={BLURB} />
             </Slide>
         </div>
     )

@@ -9,7 +9,7 @@ import Background from './components/background.js';
 import Landing from "./components/landing.js";
 import MissionStatement from "./components/mission.js";
 import AboutTheBoard from "./components/about-the-board.js";
-import { Box } from "@material-ui/core";
+import { Box, Container } from "@material-ui/core";
 
 
 class Home extends Component {
@@ -19,9 +19,11 @@ class Home extends Component {
                 <Landing />
 
                 <ParallaxLayer offset={1.2} speed={1.3} className='to-front'>
-                    <MissionStatement />
-                    <Box mt={40} />
-                    <AboutTheBoard />
+                    <Container className='smaller-container'>
+                        <MissionStatement />
+                        <Box mt={40} />
+                        <AboutTheBoard />
+                    </Container>
                 </ParallaxLayer>
 
                 <ParallaxLayer offset={0.8} speed={-0.4}>
@@ -32,7 +34,7 @@ class Home extends Component {
 
                 <Clouds />
 
-                
+
 
             </Parallax >
         )

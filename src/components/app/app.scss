@@ -154,3 +154,7 @@ body{
   border: none;
   box-shadow: $light-outer-shadow;
 }
+
+.smaller-container{
+  max-width: 1600px !important;
+}

@@ -1,4 +1,4 @@
-import { Container, Grid } from '@material-ui/core';
+import { Grid, Box, Typography } from '@material-ui/core';
 import { Component } from 'react';
 
 import Nathan from './board-cards/nathan.js';
@@ -11,8 +11,8 @@ import Christian from './board-cards/christian.js';
 class AboutTheBoard extends Component {
     render() {
         return (
-
-            <Container maxWidth='xl'>
+            <Box>
+                <Typography variant='inherit' component='h1' align='center'>Meet The Board</Typography>
                 <Grid container justify='space-around' spacing={10}>
                     <Grid item md={4}>
                         <Nathan />
@@ -33,7 +33,7 @@ class AboutTheBoard extends Component {
                         <Christian />
                     </Grid>
                 </Grid>
-            </Container>
+            </Box>
         )
     }
 }

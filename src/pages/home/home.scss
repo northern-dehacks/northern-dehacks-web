@@ -42,8 +42,8 @@ input[name="newsletter-signup"] {
     position: relative;
     text-align: center;
     border-radius: 74% 82% 70% 88%;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 10rem;
+    background-color: rgba(242, 242, 242, 0.9);
+    padding: 5rem;
     font-size: 1.2rem;
 }
 
@@ -66,13 +66,13 @@ input[name="newsletter-signup"] {
 }
 .mission-box:before {
     border-radius: 130% 151% 189% 166%;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(242, 242, 242, 0.7);
     animation-delay: 0s;
     transition: 0.5s;
 }
 .mission-box:after {
     border-radius: 145% 86% 80% 90%;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(242, 242, 242, 0.3);
     animation-delay: 0.2s;
     transition: 0.5s;
 }
@@ -85,19 +85,3 @@ input[name="newsletter-signup"] {
         transform: rotate(360deg);
     }
 }
-
-/*@media screen and (max-width: 700px) {
-    .mission-box:before,
-    .mission-box:after {
-        animation: none;
-        opacity: 0;
-    }
-
-    .mission-box{
-        text-align: left;
-        padding: 1.5rem 3rem 1.5rem 3rem;
-        border-radius: 20px;
-        opacity: 100%;
-    }
-}
-*/

@@ -3,7 +3,7 @@ import handleViewport from 'react-in-viewport';
 import { Slide } from '@material-ui/core'
 
 import BoardMemberCard from './board-member-card.js';
-import AliciaImg from '../../../../assets/board-members/nathan.png';
+import AliciaImg from '../../../../assets/board-members/alicia.png';
 
 const AliciaCard = ({ forwardedRef, view }) => {
     const BLURB = "Hello! My name is Alicia Unwin and I'm currently a grade 11 student and a founding member of Northern DeHacks. I'm passionate about design and business. I help to run social media and coordinate events here at Northern DeHacks."

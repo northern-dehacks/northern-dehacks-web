@@ -5,8 +5,8 @@ import handleViewport from 'react-in-viewport';
 const Mission = ({ forwardedRef, view }) => {
     return (
         <div className="viewport-block" ref={forwardedRef}>
-            <Grid container justify='space-around' spacing={10}>
-                <Grid item lg={5}>
+            <Grid container justify='space-around'>
+                <Grid item md={5}>
                     <Slide timeout={1000} in={view} direction='left' mountOnEnter unmountOnExit>
                         <Box className="mission-box">
                             <Typography variant='inherit' component='h1'>Our Mission</Typography>
@@ -17,7 +17,7 @@ const Mission = ({ forwardedRef, view }) => {
 
                     </Slide>
                 </Grid>
-                <Grid item lg={5}>
+                <Grid item md={5}>
                     <Slide timeout={1000} in={view} direction='left' mountOnEnter unmountOnExit>
                         <Box className="mission-box">
                             <Typography variant='inherit' component='h1'>Our Mission</Typography>

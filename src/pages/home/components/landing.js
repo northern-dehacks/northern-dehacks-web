@@ -22,8 +22,6 @@ class Landing extends Component {
                 </Container>
 
                 <Particles />
-
-                <Box mb={30} />
             </Box>
         )
     }

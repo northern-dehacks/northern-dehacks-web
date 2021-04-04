@@ -66,6 +66,13 @@ h1{
   padding: 0;
 }
 
+body{
+  overflow-x: hidden;
+}
+
+html{
+  overflow-x: hidden;
+}
 
 .flex-center {
   height: 100vh;
@@ -134,6 +141,9 @@ h1{
   z-index: 1;
 }
 
+.overflow-hidden{
+  overflow: hidden;
+}
 
 @mixin default-input{
   outline: none;

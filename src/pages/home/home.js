@@ -18,6 +18,7 @@ class Home extends Component {
                     <MissionStatement />
                     <Box mt={40} />
                     <AboutTheBoard />
+                    <Box mt={40} />
                 </Container>
 
 

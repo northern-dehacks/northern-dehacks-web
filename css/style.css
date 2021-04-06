@@ -84,6 +84,9 @@ nav {
   margin: 0 1.5rem;
   height: 100%;
   text-align: center;
+}
+
+.v-center{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,12 +162,13 @@ nav {
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.1rem;
+  border: 3px solid transparent;
 }
 
 .cta-btn:hover{
   transition: all 1s ease;
   background-color: transparent;
-  box-shadow: 0 0 0 3px var(--highlight);
+  border: 3px solid var(--highlight);
   color: white;
 }
 
@@ -175,7 +179,7 @@ nav {
   display: inline-block;
   background-color: transparent;
   font-family: 'aileron-regular';
-  box-shadow: 0 0 0 3px var(--highlight);
+  border: 3px solid var(--highlight);
   color: var(--highlight);
   padding: 1.2rem 0;
   width: 100%;

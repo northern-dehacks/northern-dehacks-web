@@ -1,4 +1,4 @@
-import { Slide, Grid, Box, Typography } from '@material-ui/core'
+import { Grid } from '@material-ui/core'
 import { Component } from 'react'
 import handleViewport from 'react-in-viewport';
 

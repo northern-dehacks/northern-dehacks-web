@@ -4,11 +4,12 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 
-class BoardMemberCard extends Component {
+class NDHValueBox extends Component {
     render() {
         return (
-            <Card className='h-100'>
+            <Card className='h-100' elevation={4}>
                 <CardMedia
+                    height='70%'
                     component="img"
                     alt='img'
                     image={ this.props.img }
@@ -27,4 +28,4 @@ class BoardMemberCard extends Component {
     }
 }
 
-export default BoardMemberCard
+export default NDHValueBox

@@ -22,6 +22,7 @@ class Landing extends Component {
                 </Container>
 
                 <Particles />
+
             </Box>
         )
     }

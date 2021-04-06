@@ -83,6 +83,7 @@ nav {
   display: block;
   margin: 0 1.5rem;
   height: 100%;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,6 +92,7 @@ nav {
 .top-nav-sponsor {
   padding: 1rem 2rem;
   font-weight: bold;
+  letter-spacing: 1.3px;
   background-color: var(--highlight);
   color: white !important;
 }

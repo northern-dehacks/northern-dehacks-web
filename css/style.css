@@ -222,6 +222,12 @@ nav {
   padding: 4rem;
 }
 
+@media screen and (max-width: 411px) {
+  .landing-box{
+    max-width: 90%;
+  }
+}
+
 @media screen and (max-width: 1920px) {
   .chip-title{
     margin-right: 0.5rem;
@@ -241,7 +247,7 @@ nav {
 
   .gcc-sponsor-landing {
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .landing-box {

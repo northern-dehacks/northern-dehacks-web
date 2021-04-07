@@ -150,6 +150,7 @@ nav {
 }
 
 .cta-btn {
+  user-select: none;
   word-wrap: break-word;
   transition: all 1s ease;
   display: inline-block;
@@ -175,6 +176,7 @@ nav {
 
 
 .cta-btn-outline {
+  user-select: none;
   word-wrap: break-word;
   transition: all 1s ease;
   text-align: center;

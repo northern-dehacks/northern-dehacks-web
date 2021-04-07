@@ -209,6 +209,7 @@ nav {
 .chip-title {
   font-family: "aileron-heavy";
   font-size: 64px;
+  word-wrap: break-word;
   font-style: normal;
   font-weight: 900;
   line-height: 69px;

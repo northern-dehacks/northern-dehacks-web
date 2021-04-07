@@ -31,6 +31,10 @@
   src: local("aileron"), url("../assets/fonts/aileron/Aileron-Italic.otf");
 }
 
+.highlight {
+  color: var(--highlight);
+}
+
 .bg-highlight {
   background-color: var(--highlight);
 }
@@ -39,22 +43,16 @@ a:hover {
   text-decoration: none;
 }
 
+h1,
 h2,
-h3 {
-  font-family: "aileron-regular";
-}
-
+h3,
 h4,
 h5 {
-  font-family: "aileron-italic";
+  font-family: "aileron-heavy";
 }
 
 p {
-  font-family: "aileron-thin";
-}
-
-h1 {
-  font-family: "aileron-heavy";
+  font-family: "aileron-light";
 }
 
 * {
@@ -86,19 +84,27 @@ nav {
   text-align: center;
 }
 
-.v-center{
+.v-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .top-nav-sponsor {
-  padding: 1rem 2rem;
+  transition: all 1s ease;
+  padding: 0.8rem 1.8rem;
   font-weight: bold;
   letter-spacing: 1.3px;
   background-color: var(--highlight);
+  border: 2px solid transparent;
   color: white !important;
 }
+
+.top-nav-sponsor:hover {
+  transition: all 1s ease;
+  border-radius: 20px;
+}
+
 .my-nav-item:hover {
   color: initial;
 }
@@ -110,7 +116,7 @@ nav {
 
 .landing {
   background-image: url("../assets/images/landing-img.png");
-  background-size: 100%;
+  background-size: cover;
   overflow-y: hidden;
   min-height: 100vh;
 }
@@ -131,8 +137,7 @@ nav {
 }
 
 .landing-body {
-  font-family: "aileron-regular";
-  line-height: 1.5;
+  line-height: 1.2;
   font-size: 17px;
   font-style: normal;
   font-weight: 300;
@@ -147,7 +152,7 @@ nav {
   display: inline-block;
   text-align: center;
   background-color: var(--highlight);
-  font-family: 'aileron-regular';
+  font-family: "aileron-regular";
   color: white;
   padding: 1.2rem 0;
   width: 100%;
@@ -158,13 +163,11 @@ nav {
   border: 3px solid transparent;
 }
 
-.cta-btn:hover{
+.cta-btn:hover {
   transition: all 1s ease;
-  background-color: transparent;
-  border: 3px solid var(--highlight);
+  border-radius: 20px;
   color: white;
 }
-
 
 .cta-btn-outline {
   user-select: none;
@@ -173,7 +176,7 @@ nav {
   text-align: center;
   display: inline-block;
   background-color: transparent;
-  font-family: 'aileron-regular';
+  font-family: "aileron-regular";
   border: 3px solid var(--highlight);
   color: var(--highlight);
   padding: 1.2rem 0;
@@ -184,10 +187,45 @@ nav {
   letter-spacing: 0.1rem;
 }
 
-.cta-btn-outline:hover{
+.cta-btn-outline:hover {
   transition: all 1s ease;
-  background-color: var(--highlight);
-  color: white;
+  border-radius: 20px;
+  color: var(--highlight);
+}
+
+.chip-section {
+  background-image: url("../assets/images/chip.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+}
+
+.chip-content {
+  max-width: 80%;
+  margin: auto;
+  padding-top: 19rem;
+}
+
+.chip-title {
+  font-family: "aileron-heavy";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 69px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.our-mission {
+  background-color: white;
+  margin-top: 10rem;
+  padding: 4rem;
+}
+
+@media screen and (max-width: 1920px) {
+  .chip-title{
+    margin-right: 0.5rem;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -201,12 +239,53 @@ nav {
     padding: 2rem;
   }
 
-  .gcc-sponsor-landing{
+  .gcc-sponsor-landing {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
 
-  .landing-box{
+  .landing-box {
     margin-top: 2rem;
+  }
+
+  .chip-section{
+    background-size: cover !important;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .chip-section{
+    background-size: 110%;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .chip-section{
+    background-size: 120%;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .chip-section{
+    background-size: 130%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .chip-section{
+    background-size: 140%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .chip-section{
+    background-size: 160%;
+  }
+}
+
+@media screen and (max-width: 1045px) {
+  .chip-section{
+    background-size: 180%;
   }
 }

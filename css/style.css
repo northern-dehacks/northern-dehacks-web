@@ -39,8 +39,13 @@
   background-color: var(--highlight);
 }
 
+a {
+  color: black;
+}
+
 a:hover {
   text-decoration: none;
+  color: inherit;
 }
 
 h1,
@@ -67,6 +72,7 @@ body {
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -100,11 +106,6 @@ nav {
   color: white !important;
 }
 
-.top-nav-sponsor:hover {
-  transition: all 1s ease;
-  border-radius: 20px;
-}
-
 .my-nav-item:hover {
   color: initial;
 }
@@ -136,7 +137,7 @@ nav {
   margin-top: 7rem;
 }
 
-.landing-body {
+.info-text {
   line-height: 1.2;
   font-size: 17px;
   font-style: normal;
@@ -153,7 +154,7 @@ nav {
   text-align: center;
   background-color: var(--highlight);
   font-family: "aileron-regular";
-  color: white;
+  color: white !important;
   padding: 1.2rem 0;
   width: 100%;
   font-size: 18px;
@@ -161,12 +162,6 @@ nav {
   font-weight: 700;
   letter-spacing: 0.1rem;
   border: 3px solid transparent;
-}
-
-.cta-btn:hover {
-  transition: all 1s ease;
-  border-radius: 20px;
-  color: white;
 }
 
 .cta-btn-outline {
@@ -178,19 +173,13 @@ nav {
   background-color: transparent;
   font-family: "aileron-regular";
   border: 3px solid var(--highlight);
-  color: var(--highlight);
+  color: var(--highlight) !important;
   padding: 1.2rem 0;
   width: 100%;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.1rem;
-}
-
-.cta-btn-outline:hover {
-  transition: all 1s ease;
-  border-radius: 20px;
-  color: var(--highlight);
 }
 
 .chip-section {
@@ -223,14 +212,55 @@ nav {
   padding: 4rem;
 }
 
+.scrolling-text-blue {
+  color: var(--primary);
+  font-size: 4rem;
+  font-weight: bold;
+  word-spacing: 0.5rem;
+  display: block;
+  margin: 0.5rem 2rem;
+}
+
+.scrolling-text-outline {
+  color: white;
+  text-shadow: -2px -2px 0 var(--primary), 2px -2px 0 var(--primary), -2px 2px 0 var(--primary),
+    2px 2px 0 var(--primary);
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin: 0.3rem 2rem;
+}
+
+.main-pg-gcc-section{
+  background-image: url('../assets/images/gcc-bg.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  height: 200vh;
+}
+
+.main-pg-gcc-section__container{
+  margin: auto;
+  max-width: 80%;
+}
+
+.main-pg-gcc-ppl{
+  margin-top: 33rem;
+  margin-left: 3rem;
+}
+
+.main-pg-gcc-content{
+  margin-top: 19rem;
+}
+
 @media screen and (max-width: 411px) {
-  .landing-box{
+  .landing-box {
     max-width: 90%;
   }
 }
 
 @media screen and (max-width: 1920px) {
-  .chip-title{
+  .chip-title {
     margin-right: 0.5rem;
   }
 }
@@ -255,44 +285,44 @@ nav {
     margin-top: 2rem;
   }
 
-  .chip-section{
+  .chip-section {
     background-size: cover !important;
     padding-bottom: 2rem;
   }
 }
 
 @media screen and (max-width: 1650px) {
-  .chip-section{
+  .chip-section {
     background-size: 110%;
   }
 }
 
 @media screen and (max-width: 1550px) {
-  .chip-section{
+  .chip-section {
     background-size: 120%;
   }
 }
 
 @media screen and (max-width: 1350px) {
-  .chip-section{
+  .chip-section {
     background-size: 130%;
   }
 }
 
 @media screen and (max-width: 1250px) {
-  .chip-section{
+  .chip-section {
     background-size: 140%;
   }
 }
 
 @media screen and (max-width: 1150px) {
-  .chip-section{
+  .chip-section {
     background-size: 160%;
   }
 }
 
 @media screen and (max-width: 1045px) {
-  .chip-section{
+  .chip-section {
     background-size: 180%;
   }
 }

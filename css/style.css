@@ -116,7 +116,7 @@ nav {
 }
 
 .landing {
-  background-image: url("../assets/images/landing-img.png");
+  background-image: url("../assets/backgrounds/landing-img.png");
   background-size: cover;
   overflow-y: hidden;
   min-height: 100vh;
@@ -183,7 +183,7 @@ nav {
 }
 
 .chip-section {
-  background-image: url("../assets/images/chip.png");
+  background-image: url("../assets/backgrounds/chip.png");
   background-size: 100%;
   background-repeat: no-repeat;
   overflow-y: hidden;
@@ -232,11 +232,12 @@ nav {
 }
 
 .main-pg-gcc-section{
-  background-image: url('../assets/images/gcc-bg.png');
-  background-size: 100%;
+  background-image: url('../assets/backgrounds/gcc-bg.png');
+  background-size: cover;
   background-repeat: no-repeat;
   overflow-y: hidden;
-  height: 120vh;
+  height: 95vh;
+  width: 100%;
 }
 
 .main-pg-gcc-section__container{
@@ -245,12 +246,12 @@ nav {
 }
 
 .main-pg-gcc-ppl{
-  margin-top: 33rem;
+  margin-top: 28rem;
   margin-left: 3rem;
 }
 
 .main-pg-gcc-content{
-  margin-top: 25rem;
+  margin-top: 22rem;
 }
 
 @media screen and (max-width: 411px) {

@@ -236,7 +236,7 @@ nav {
   background-size: 100%;
   background-repeat: no-repeat;
   overflow-y: hidden;
-  height: 200vh;
+  height: 120vh;
 }
 
 .main-pg-gcc-section__container{
@@ -250,7 +250,7 @@ nav {
 }
 
 .main-pg-gcc-content{
-  margin-top: 19rem;
+  margin-top: 25rem;
 }
 
 @media screen and (max-width: 411px) {
@@ -266,6 +266,10 @@ nav {
 }
 
 @media screen and (max-width: 991px) {
+  .main-pg-gcc-ppl{
+    margin: 10rem auto !important;
+  }
+
   .top-nav-item {
     margin-top: 1.2rem;
   }
@@ -301,6 +305,22 @@ nav {
   .chip-section {
     background-size: 120%;
   }
+
+  .main-pg-gcc-ppl{
+    margin-top: 25rem;
+  }
+
+  .main-pg-gcc-content{
+    margin-top: 18rem;
+  }
+
+  .main-pg-gcc-section{
+    height: auto;
+  }
+
+  .main-pg-gcc-section__container{
+    margin-bottom: 6rem;
+  }
 }
 
 @media screen and (max-width: 1350px) {
@@ -318,6 +338,10 @@ nav {
 @media screen and (max-width: 1150px) {
   .chip-section {
     background-size: 160%;
+  }
+
+  .main-pg-gcc-section{
+    background-size: cover;
   }
 }
 

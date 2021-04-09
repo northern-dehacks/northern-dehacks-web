@@ -310,6 +310,12 @@ nav {
   font-size: 1.4rem;
 }
 
+iframe.instagram-media {
+  max-width: 100% !important;
+  width: 100% !important;
+  min-width: auto !important;
+}
+
 @media screen and (max-width: 400px) {
   .instagram-container{
     width: 100%;

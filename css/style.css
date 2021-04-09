@@ -91,7 +91,7 @@ nav {
   font-family: "aileron-regular";
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 1.2rem;
   display: block;
   margin: 0 1.5rem;
   height: 100%;
@@ -134,7 +134,7 @@ nav {
   font-family: "aileron-heavy";
   font-style: normal;
   font-weight: 900;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 58px;
   text-transform: capitalize;
   color: var(--primary);
@@ -147,7 +147,7 @@ nav {
 
 .info-text {
   line-height: 1.2;
-  font-size: 17px;
+  font-size: 1.1rem;
   font-style: normal;
   font-weight: 300;
   letter-spacing: 0.005em;
@@ -165,7 +165,7 @@ nav {
   color: white !important;
   padding: 1.2rem 0;
   width: 100%;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.1rem;
@@ -184,7 +184,7 @@ nav {
   color: var(--highlight) !important;
   padding: 1.2rem 0;
   width: 100%;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.1rem;
@@ -205,7 +205,7 @@ nav {
 
 .chip-title {
   font-family: "aileron-heavy";
-  font-size: 64px;
+  font-size: 4rem;
   word-wrap: break-word;
   font-style: normal;
   font-weight: 900;
@@ -274,7 +274,7 @@ nav {
 .newsletter-input{
   width: 100%;
   height: 100%;
-  font-size: 20px;
+  font-size: 1.2;
   padding: 0 1.5rem;
   background-color: #EBEBEB;
   border: none;
@@ -292,7 +292,7 @@ nav {
 
 .newsletter-title{
   font-weight: bold;
-  font-size: 48px;
+  font-size: 3rem;
 }
 
 @media screen and (max-width: 411px) {
@@ -307,13 +307,12 @@ nav {
 }
 
 .fs-22{
-  font-size: 22px;
+  font-size: 1.4rem;
 }
 
 @media screen and (max-width: 400px) {
   .instagram-container{
     width: 100%;
-    margin: 0;
   }
 }
 

@@ -151,13 +151,13 @@
       <div class="newsletter-text mx-auto mt-2">
         <p>Sign up to get monthly emails of exciting upcoming events and giveaways</p>
       </div>
-      <form class="mt-5">
+      <form class="mt-5" id="newsletter-form">
         <div class="row no-gutters">
           <div class="col-lg-8 newsletter-input-container">
-            <input placeholder="Email address" class="newsletter-input" />
+            <input type="email" name="email" placeholder="Email address" class="newsletter-input" required />
           </div>
           <div class="col-lg-4">
-            <button class="cta-btn">SUBSCRIBE</button>
+            <button type="submit" class="cta-btn">SUBSCRIBE</button>
           </div>
         </div>
       </form>
@@ -734,9 +734,8 @@
     </div>
   </section>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>

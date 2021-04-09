@@ -310,6 +310,13 @@ nav {
   font-size: 22px;
 }
 
+@media screen and (max-width: 400px) {
+  .instagram-container{
+    width: 100%;
+    margin: 0;
+  }
+}
+
 @media screen and (max-width: 1920px) {
   .chip-title {
     margin-right: 0.5rem;

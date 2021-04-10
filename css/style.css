@@ -43,6 +43,10 @@ a {
   color: black;
 }
 
+.lh-05{
+  line-height: 0.5px;
+}
+
 a:hover {
   text-decoration: none;
   color: inherit;
@@ -332,11 +336,6 @@ nav {
   font-size: 3rem;
 }
 
-@media screen and (max-width: 411px) {
-  .newsletter-text{
-    max-width: 80%;
-  }
-}
 
 .instagram-container{
   max-width: 80%;
@@ -353,9 +352,26 @@ iframe.instagram-media {
   min-width: auto !important;
 }
 
+footer{
+  width: 100%;
+  background-color: var(--primary);
+  color: white;
+}
+
+.footer-content{
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 400px) {
   .instagram-container{
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  .newsletter-text{
+    max-width: 80%;
   }
 }
 

@@ -154,11 +154,17 @@ nav {
   text-align: left;
 }
 
+.border-transparent-3{
+  border: 3px solid transparent !important;
+}
+
 .cta-btn {
+  position: relative;
+  overflow: hidden;
   user-select: none;
   word-wrap: break-word;
   transition: all 1s ease;
-  display: inline-block;
+  display: block;
   text-align: center;
   background-color: var(--highlight);
   font-family: "aileron-regular";
@@ -169,15 +175,17 @@ nav {
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.1rem;
-  border: 3px solid transparent;
+  border: none;
 }
 
 .cta-btn-outline {
+  position: relative;
+  overflow: hidden;
   user-select: none;
   word-wrap: break-word;
   transition: all 1s ease;
   text-align: center;
-  display: inline-block;
+  display: block;
   background-color: transparent;
   font-family: "aileron-regular";
   border: 3px solid var(--highlight);
@@ -188,6 +196,34 @@ nav {
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.1rem;
+}
+
+.cta-btn:before, .cta-btn-outline:before {
+  content: "";
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  display: block;
+  width: 0;
+  padding-top: 0;
+    
+  border-radius: 100%;
+  
+  background-color: rgba(236, 240, 241, .3);
+  
+  transform: translate(-50%, -50%);
+}
+
+.cta-btn:active:before, .cta-btn-outline:active::before {
+  width: 120%;
+  padding-top: 120%;
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+.cta-btn:focus:not(:active)::after, .cta-btn-outline:not(:active)::after {
+  animation: ripple 1s ease-out;
 }
 
 .chip-section {

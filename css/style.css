@@ -332,15 +332,17 @@ nav {
 }
 
 .newsletter-section{
-  margin-top: 10rem;
-  margin-bottom: 20rem;
+  margin: 15rem 0
 }
 
-.newsletter-title{
+.general-title{
   font-weight: bold;
   font-size: 3rem;
 }
 
+.past-events-section{
+  margin-bottom: 13rem;
+}
 
 .instagram-container{
   max-width: 80%;
@@ -425,6 +427,10 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
+  .mb-lg-1{
+    margin-bottom: 1rem;
+  }
+
   .main-pg-gcc-ppl{
     margin: 6rem auto !important;
   }

@@ -1,6 +1,6 @@
 $('#newsletter-form').submit(function (_) {
     $.ajax({
-        url: 'http://localhost:8080/newsletter',
+        url: 'https://northerndehacks-server.herokuapp.com/',
         type: 'post',
         data: $('#newsletter-form').serialize(),
         success: function () {
@@ -14,7 +14,7 @@ $('#newsletter-form').submit(function (_) {
 
 $('#contact-form').submit(function (_) {
     $.ajax({
-        url: 'http://localhost:8080/contact',
+        url: 'https://northerndehacks-server.herokuapp.com/',
         type: 'post',
         data: $('#contact-form').serialize(),
         success: function () {

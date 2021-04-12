@@ -360,26 +360,6 @@ iframe.instagram-media {
   min-width: auto !important;
 }
 
-footer {
-  background-color: var(--primary);
-  color: white;
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-.icon {
-  margin-left: 0.8rem;
-  margin-right: 0.8rem;
-  color: white;
-}
-
-.contact{
-  margin-bottom: 5rem;
-}
-
 .contact-input{
   width: 100%;
   font-weight: bold;
@@ -408,6 +388,49 @@ footer {
   letter-spacing: 1.5px;
 }
 
+
+footer {
+  background-color: var(--primary);
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+footer div{
+  word-wrap: break-word;
+}
+
+footer a{
+  color: white;
+  font-weight: 400;
+}
+
+.footer-container{
+  max-width: 80%;
+}
+
+.footer-contacts > a{
+  display: block;
+}
+
+.footer-up-arrow{
+  padding: 1.4rem 0;
+  width: 80%;
+  border-radius: 50%;
+  background-color: var(--info);
+  text-align: center;
+}
+
+.icon {
+  margin: 0 0.8rem;
+}
+
+.contact{
+  margin-bottom: 5rem;
+}
+
 @media screen and (max-width: 400px) {
   .instagram-container{
     width: 100%;
@@ -429,6 +452,10 @@ footer {
 @media screen and (max-width: 991px) {
   .mb-lg-1{
     margin-bottom: 1rem;
+  }
+
+  .mtb-lg-1{
+    margin: 1rem 0;
   }
 
   .main-pg-gcc-ppl{

@@ -132,7 +132,7 @@ nav {
 }
 
 .landing {
-  background-image: url("../assets/backgrounds/landing-img.png");
+  background-image: url("../assets/backgrounds/index/landing-img.png");
   background-size: cover;
   overflow-y: hidden;
   min-height: 100vh;
@@ -235,7 +235,7 @@ nav {
 }
 
 .chip-section {
-  background-image: url("../assets/backgrounds/chip.png");
+  background-image: url("../assets/backgrounds/index/chip.png");
   background-size: 100%;
   background-repeat: no-repeat;
   overflow-y: hidden;
@@ -288,7 +288,6 @@ nav {
   background-image: url('../assets/backgrounds/gcc-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
-  overflow: hidden;
   width: 100%;
 }
 
@@ -446,6 +445,31 @@ footer a{
   margin-bottom: 5rem;
 }
 
+/* GCC */
+
+.tracks-section{
+  padding: 11rem 0;
+  background-image: url('../assets/backgrounds/gcc/tracks-bg.png');
+  background-size: cover;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+}
+
+.tracks-title{
+  font-size: 4rem;
+}
+
+.track-sub{
+  margin-top: 1.8rem;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.1rem;
+}
+
+/* END GCC */
+
 @media screen and (max-width: 400px) {
   .instagram-container{
     width: 100%;
@@ -471,6 +495,10 @@ footer a{
 
   .mtb-lg-1{
     margin: 1rem 0;
+  }
+
+  .mtb-lg-2{
+    margin: 2rem 0;
   }
 
   .main-pg-gcc-ppl{

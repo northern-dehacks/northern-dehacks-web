@@ -57,14 +57,6 @@ input, textarea {
     color: var(--primary);
 }
 
-.gcc-primary {
-    color: var(--gcc-primary);
-}
-
-.gcc-secondary {
-    color: var(--gcc-secondary);
-}
-
 a {
     color: black;
 }
@@ -92,10 +84,6 @@ button:focus {
 
 button:hover {
     cursor: pointer;
-}
-
-.gcc-title-color{
-    color: #2B0479;
 }
 
 .background-img{
@@ -159,7 +147,7 @@ nav {
 }
 
 .landing {
-    background-image: url("../assets/backgrounds/index/landing-img.png");
+    background-image: url("../assets/backgrounds/landing-img.png");
     background-size: cover;
     overflow-y: hidden;
     min-height: 100vh;
@@ -257,7 +245,7 @@ nav {
 }
 
 .chip-section {
-    background-image: url("../assets/backgrounds/index/chip.png");
+    background-image: url("../assets/backgrounds/chip.png");
     background-size: 100%;
     background-repeat: no-repeat;
     overflow-y: hidden;
@@ -446,10 +434,10 @@ footer a {
 
 .footer-up-arrow {
     padding: 1.4rem 0;
-    width: 70%;
     border-radius: 50%;
     background-color: var(--info);
     text-align: center;
+    max-width: 4.5rem;
 }
 
 .icon {
@@ -462,9 +450,22 @@ footer a {
 
 /* GCC */
 
+.gcc-title-color{
+    color: #2B0479;
+}
+
+.gcc-primary {
+    color: var(--gcc-primary);
+}
+
+.gcc-secondary {
+    color: var(--gcc-secondary);
+}
+
+
 .tracks-section {
     padding: 11rem 0;
-    background-image: url('../assets/backgrounds/gcc/tracks-bg.png');
+    background-image: url('../assets/gcc/backgrounds/tracks-bg.png');
 }
 
 .tracks-title {
@@ -508,7 +509,7 @@ footer a {
 }
 
 .schedule-bg{
-    background-image: url('../assets/backgrounds/gcc/schedule-bg.png');
+    background-image: url('../assets/gcc/backgrounds/schedule-bg.png');
 }
 
 .schedule{
@@ -524,7 +525,7 @@ footer a {
 }
 
 .ready-to-hack-bg{
-    background-image: url('../assets/backgrounds/gcc/ready-to-hack-bg.png');
+    background-image: url('../assets/gcc/backgrounds/ready-to-hack-bg.png');
 }
 
 .ready-to-hack{
@@ -537,6 +538,22 @@ footer a {
 
 .ready-to-hack-body{
     font-size: 1.5rem;
+}
+
+.sponsors-section{
+    padding: 7rem 0;
+    max-width: 80%;
+    margin: auto;
+}
+
+.sponsors-title{
+    font-size: 1.8rem;
+}
+
+.sponsors-section .col-md-2, .col-md-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* END GCC */
@@ -560,6 +577,18 @@ footer a {
 }
 
 @media screen and (max-width: 991px) {
+    .sponsors-section .col-md-2, .col-md-3{
+        margin-top: 5rem;
+    }
+
+    .sponsors-section > div > .row:nth-child(2){
+        margin-top: 0 !important;
+    }
+
+    .sponsors-section{
+        max-width: 100%;
+    }
+
     .mb-lg-1 {
         margin-bottom: 1rem;
     }

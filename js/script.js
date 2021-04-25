@@ -7,7 +7,8 @@ $('#newsletter-form').submit(function (e) {
         success: function (_) {
             alert('Subscribed')
         },
-        error: function (_) {
+        error: function (err) {
+            console.log(err)
             alert('Error')
         }
     });
